@@ -1,0 +1,30 @@
+Lab 05 - Git commands (run inside lms_project, Git Bash / terminal)
+
+Task 1: Repository setup + initial commit
+  git init
+  git status --short
+  git add .
+  git commit -m "Initial commit: add LMS Maven project and .gitignore"
+
+Task 2: Branching
+  git checkout -b feature/add-member-lookup
+  (edit LibraryService.java: add findMemberById())
+  git add src/main/java/com/hitms/lms/LibraryService.java
+  git commit -m "Add findMemberById() helper method"
+  git checkout main
+  git merge feature/add-member-lookup
+
+Task 3: History (need >= 3 commits, e.g. also "Add Javadoc to LibraryService methods")
+  git log --oneline
+
+Task 4: Remote
+  git remote add origin https://github.com/Waniza-Khan/lms_project.git
+  git push -u origin main
+  (make a small change, e.g. input validation in issueBook())
+  git add .
+  git commit -m "Add input validation to issueBook()"
+  git push
+
+Maven:
+  mvn compile
+  mvn exec:java
