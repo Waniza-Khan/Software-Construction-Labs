@@ -12,3 +12,4 @@
   compile, run Main, and only then commit the merge.
 - Delete a branch (local and remote) once its PR is merged, and keep
   target/ and IDE files out of the repo through .gitignore.
+- Review every pull request within one working day.
