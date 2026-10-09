@@ -18,8 +18,7 @@ public class LibraryService {
     }
 
     /**
-     * Issues one copy of the given title; throws BookUnavailableException
-     * if no copies are left in the catalogue.
+   * Issue a single copy; throws BookUnavailableException if none left
      * @return true once the copy has been issued
      * @throws BookUnavailableException if the book is missing or already out
      */
